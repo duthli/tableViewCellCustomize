@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pyG-ef-fWt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master TableVC-->
+        <scene sceneID="r79-a5-pf0">
+            <objects>
+                <tableViewController id="5tT-5f-ewk" customClass="MasterTableVC" customModule="customize_tableviewcell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" id="he6-ae-tcB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="5tT-5f-ewk" id="z59-tF-I7z"/>
+                            <outlet property="delegate" destination="5tT-5f-ewk" id="pJx-Wi-3uT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QAN-vb-w7s"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nfb-IA-Hss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070.5" y="353.5"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="Nz6-st-va2">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pfR-Rs-Wgt" customClass="DetailVC" customModule="customize_tableviewcell" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rIY-6N-J9X"/>
+                        <viewControllerLayoutGuide type="bottom" id="h8N-Mg-rEH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RbK-nQ-vVD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vsA-ra-xHm">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vsA-ra-xHm" firstAttribute="top" secondItem="RbK-nQ-vVD" secondAttribute="topMargin" id="5r0-Kv-giy"/>
+                            <constraint firstItem="h8N-Mg-rEH" firstAttribute="top" secondItem="vsA-ra-xHm" secondAttribute="bottom" id="IAu-3t-39v"/>
+                            <constraint firstItem="vsA-ra-xHm" firstAttribute="leading" secondItem="RbK-nQ-vVD" secondAttribute="leadingMargin" constant="-20" id="h6G-ZS-m4f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vsA-ra-xHm" secondAttribute="trailing" constant="-20" id="keb-pU-XOO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="image" destination="vsA-ra-xHm" id="Jle-LC-ioq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCo-Gl-2nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477.5" y="353.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z0o-fP-1ud">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pyG-ef-fWt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ypp-iZ-gPT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5tT-5f-ewk" kind="relationship" relationship="rootViewController" id="Cbx-i0-twj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhL-4H-RPL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="354"/>
+        </scene>
+    </scenes>
+</document>

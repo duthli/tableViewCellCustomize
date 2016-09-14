@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Glock</key>
+	<string>pistol0.png</string>
+	<key>Dual Berettas</key>
+	<string>pistol1.png</string>
+	<key>P250</key>
+	<string>pistol2.png</string>
+	<key>Desert Eagle</key>
+	<string>pistol3.png</string>
+	<key>five-seven</key>
+	<string>pistol4.png</string>
+	<key>CZ</key>
+	<string>pistol5.png</string>
+	<key>Revolver</key>
+	<string>pistol6.png</string>
+	<key>P2000</key>
+	<string>pistol7.png</string>
+	<key>Tec-9</key>
+	<string>pistol8.png</string>
+	<key>USP-S</key>
+	<string>pistol9.png</string>
+</dict>
+</plist>
